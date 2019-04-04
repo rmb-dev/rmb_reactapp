@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="wrapper">
-        <SayFullName name="Rom" surname="Byr" link="https://www.instagram.com/rombyrch/"/>
+        <SayFullName name="Inst" surname=" " link="https://www.instagram.com/"/>
         <SayFullName name="Face" surname=" " link="https://www.facebook.com"/>
         <SayFullName name="Twit" surname=" " link="https://www.twitter.com"/>
       </div>
