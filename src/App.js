@@ -35,18 +35,26 @@ function useDad() {
   async function fetchJoke() {
     const res = await fetch(API, {
     headers: {
-             Accept:'application/json'}
+             Accept:'application/json'
+    }
     });
     const data = await res.json();
     setData(data);
     }
-  return 
+  useEffect(() => {
+    fetchJoke();
+    },[];)
+  return [data, setData];
 }
 
 const Joke = () => {
+  const [data, refetch] = useDad();
+  
+  console.log(data)
   return (
     <div>
-     joke:
+     <p>{data.joke}</p>
+     <button onclick={refetch}> 
     </div>
     )
 }
