@@ -28,4 +28,21 @@ function SayFullName(props) {
   )
 }
 
+function useDad() {
+  const [data, setData] = useState({});
+  async function fetchJoke() {
+    const res = await fetch(API, {
+    headers: {\
+             Accept}
+    })
+    }
+}
+
+const Joke = () => {
+  return (
+
+    )
+}
+
+
 export default App;
