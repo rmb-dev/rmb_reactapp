@@ -28,19 +28,26 @@ function SayFullName(props) {
   )
 }
 
+const API = 'https://icanhazdadjoke.com';
+
 function useDad() {
   const [data, setData] = useState({});
   async function fetchJoke() {
     const res = await fetch(API, {
-    headers: {\
-             Accept}
-    })
+    headers: {
+             Accept:'application/json'}
+    });
+    const data = await res.json();
+    setData(data);
     }
+  return 
 }
 
 const Joke = () => {
   return (
-
+    <div>
+     joke:
+    </div>
     )
 }
 
