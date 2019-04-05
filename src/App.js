@@ -54,7 +54,7 @@ const Joke = () => {
   return (
     <div>
      <p>{data.joke}</p>
-     <button onclick={refetch}> 
+     <button onclick={refetch}>Another<button> 
     </div>
     )
 }
