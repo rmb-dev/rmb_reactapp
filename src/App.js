@@ -43,8 +43,8 @@ function useDad() {
     }
   useEffect(() => {
     fetchJoke();
-    },[];)
-  return [data, setData];
+    },[] )
+  return [data, fetchJoke];
 }
 
 const Joke = () => {
@@ -54,7 +54,7 @@ const Joke = () => {
   return (
     <div>
      <p>{data.joke}</p>
-     <button onclick={refetch}>Another<button> 
+     <button onClick={refetch}>Another<button> 
     </div>
     )
 }
